@@ -1,0 +1,72 @@
+body {
+    margin: 0;
+    background-color: #ffdfa8;
+
+}
+:root{
+    --color-principal: #be253f;
+    --color-secondary: #484848
+}
+.container-header {
+    width: 100vw;
+}
+
+.lett-header {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    width: 80%;
+    margin-top: 10%;
+    fill: transparent;
+    animation: lett-preenchimento 0.5s ease-in-out forwards 4s;
+}
+
+.lett-header path {
+    stroke-width: 2px;
+    stroke: var(--color-principal);
+    stroke-dashoffset: 3000;
+    stroke-dasharray: 3000;
+    animation: lett-tracado 5s ease-in-out forwards 1s;
+}
+
+h1,
+h2 {
+    font-family: 'Pacifico', cursive;
+    color: var(--color-principal)
+}
+h1{
+    font-size: 3em;
+}
+h2{
+    font-size: 1.5em;
+}
+p{
+    font-family: 'Lato', sans-serif;
+    color: var(--color-secondary);
+    font-size: 1em;
+}
+.container-cards{
+    width: 80%;
+    margin: auto;
+    display: flex;
+}
+
+.card{
+    background-color: white;
+    border-radius: 10px;
+    width: 50%;
+    padding: 1.5em;
+    margin: 1.5em;
+}
+@keyframes lett-preenchimento {
+    to {
+        fill: #be253f;
+    }
+}
+
+@keyframes lett-tracado {
+    to {
+        stroke-dashoffset: 0;
+
+    }
+}
